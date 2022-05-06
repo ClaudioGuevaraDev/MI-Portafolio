@@ -26,8 +26,7 @@ export default function Home() {
           backgroundColor: theme.palette.background.default
         }}
       >
-        <Navbar/>
-        Home
+        <Navbar mode={mode} setMode={setMode} children={<></>}/>
       </Box>
     </ThemeProvider>
   );
