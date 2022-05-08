@@ -2,18 +2,22 @@ import Node from "../../../assets/areas/node.svg";
 import Express from "../../../assets/areas/express.png"
 import FastAPI from "../../../assets/areas/fastapi.png"
 import React from "../../../assets/areas/react.svg";
-import Vue from "../../../assets/areas/vue.svg";
+// import Vue from "../../../assets/areas/vue.svg";
 import MySQL from "../../../assets/areas/mysql-icon.svg";
 import PostgreSQL from "../../../assets/areas/postgresql.svg";
 import MongoDB from "../../../assets/areas/mongodb.svg"
 import Electron from "../../../assets/areas/electron.svg";
 import Bootstrap from "../../../assets/areas/bootstrap.svg";
 import MaterialUI from "../../../assets/areas/material-ui.svg";
+import Pandas from "../../../assets/areas/pandas.png"
+import Numpy from "../../../assets/areas/numpy.svg"
+import Matplotlib from "../../../assets/areas/matplotlib-icon.svg"
+import ScikitLearn from "../../../assets/areas/scikit-learn.png"
 import Playwright from "../../../assets/areas/playwright.svg";
 import Linux from "../../../assets/areas/linux-tux.svg";
 import Terminal from "../../../assets/areas/terminal.svg";
 import Docker from "../../../assets/areas/docker-icon.svg";
-import Anaaconda from "../../../assets/areas/anaconda.png"
+import Anaconda from "../../../assets/areas/anaconda.png"
 
 export interface Framework {
   title: string;
@@ -55,11 +59,11 @@ export const areas: Area[] = [
         image: React,
         url: "https://es.reactjs.org/",
       },
-      {
-        title: "Vue",
-        image: Vue,
-        url: "https://vuejs.org/",
-      },
+      // {
+      //   title: "Vue",
+      //   image: Vue,
+      //   url: "https://vuejs.org/",
+      // },
     ],
   },
   {
@@ -118,6 +122,31 @@ export const areas: Area[] = [
     ],
   },
   {
+    section: "Ciencia de Datos",
+    frameworks: [
+      {
+        title: "Pandas",
+        image: Pandas,
+        url: "https://pandas.pydata.org/"
+      },
+      {
+        title: "Numpy",
+        image: Numpy,
+        url: "https://numpy.org/"
+      },
+      {
+        title: "Matplotlib",
+        image: Matplotlib,
+        url: "https://matplotlib.org/"
+      },
+      {
+        title: "Scikit Learn",
+        image: ScikitLearn,
+        url: "https://scikit-learn.org/stable/"
+      }
+    ]
+  },
+  {
     section: "Web Scraping",
     frameworks: [
       {
@@ -147,7 +176,7 @@ export const areas: Area[] = [
       },
       {
         title: "Anaconda",
-        image: Anaaconda,
+        image: Anaconda,
         url: "https://www.anaconda.com/"
       }
     ],

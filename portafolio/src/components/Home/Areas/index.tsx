@@ -43,7 +43,7 @@ export default function Areas() {
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
-                        border: 1,
+                        border: 2,
                         borderColor: "#000",
                         borderStyle: "solid",
                         borderRadius: "50px",
