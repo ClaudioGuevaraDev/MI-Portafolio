@@ -18,6 +18,9 @@ export default function Layout(props: Props) {
   const theme = createTheme({
     palette: {
       mode: mode === "light" ? "light" : "dark",
+      primary: {
+        main: "#2563eb"
+      }
     },
   });
 

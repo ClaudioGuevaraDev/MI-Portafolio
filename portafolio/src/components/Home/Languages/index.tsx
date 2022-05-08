@@ -19,7 +19,7 @@ export default function Languages() {
           Mis conocimientos base y los lenguajes de programación con los que
           mejor me desempeño para el desarrollo de software
         </Typography>
-        <Grid container spacing={3}>
+        <Grid container spacing={5}>
           {languages.map((l: language) => (
             <Grid item xl={2} xs={12} key={l.title}>
               <Tooltip title={l.title}>
