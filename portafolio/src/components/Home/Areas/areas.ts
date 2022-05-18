@@ -2,7 +2,6 @@ import Node from "../../../assets/areas/node.svg";
 import Express from "../../../assets/areas/express.png"
 import FastAPI from "../../../assets/areas/fastapi.png"
 import React from "../../../assets/areas/react.svg";
-// import Vue from "../../../assets/areas/vue.svg";
 import MySQL from "../../../assets/areas/mysql-icon.svg";
 import PostgreSQL from "../../../assets/areas/postgresql.svg";
 import MongoDB from "../../../assets/areas/mongodb.svg"
@@ -18,6 +17,7 @@ import Linux from "../../../assets/areas/linux-tux.svg";
 import Terminal from "../../../assets/areas/terminal.svg";
 import Docker from "../../../assets/areas/docker-icon.svg";
 import Anaconda from "../../../assets/areas/anaconda.png"
+import Nginx from "../../../assets/areas/nginx.svg"
 
 export interface Framework {
   title: string;
@@ -178,6 +178,11 @@ export const areas: Area[] = [
         title: "Anaconda",
         image: Anaconda,
         url: "https://www.anaconda.com/"
+      },
+      {
+        title: "Nginx",
+        image: Nginx,
+        url: "https://www.nginx.com/"
       }
     ],
   },
