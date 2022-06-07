@@ -16,7 +16,7 @@ export const qualities: quality[] = [
         image: Happy
     },
     {
-        title: "Equipo",
+        title: "Trabajo en equipo",
         description: "Busco siempre establecer una buena relación con mis compañeros y generar un buen ambiente de trabajo.",
         image: Sociable
     },

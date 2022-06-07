@@ -2,13 +2,12 @@
 // https://www.manypixels.co/gallery
 
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 
 import { qualities, quality } from "./qualities";
 
-export default function Qualities() {
-  const theme = useTheme();
+import QualityItem from "./QualityItem";
 
+export default function Qualities() {
   return (
     <Box sx={{ textAlign: "center" }}>
       <Container maxWidth="xl" sx={{ padding: 10 }}>
@@ -17,27 +16,7 @@ export default function Qualities() {
         </Typography>
         <Grid container spacing={3}>
           {qualities.map((q: quality) => (
-            <Grid item xl={3} xs={12} key={q.title}>
-              <Box
-                sx={{
-                  backgroundColor:
-                    theme.palette.mode === "light"
-                      ? "transparent"
-                      : theme.palette.divider,
-                  height: "100%",
-                  padding: 2,
-                  borderRadius: "3px"
-                }}
-              >
-                <img src={q.image} alt={q.title} />
-                <Typography variant="h5" fontWeight="bold" sx={{ marginY: 2 }}>
-                  {q.title}
-                </Typography>
-                <Typography variant="body1" fontSize={18}>
-                  {q.description}
-                </Typography>
-              </Box>
-            </Grid>
+            <QualityItem q={q}/>
           ))}
         </Grid>
       </Container>
