@@ -19,13 +19,18 @@ export default function Proyectos() {
   const theme = useTheme();
 
   return (
-    <Box textAlign="center">
+    <Box>
       <Container maxWidth="xl" sx={{ padding: 10 }}>
-        <Typography variant="h3" fontWeight="bold" sx={{ marginBottom: 10 }}>
+        <Typography
+          variant="h3"
+          fontWeight="bold"
+          sx={{ marginBottom: 10 }}
+          textAlign="center"
+        >
           Proyectos
         </Typography>
         <Grid container spacing={3}>
-          <Grid item xl={4}>
+          <Grid item xl={4} xs={12}>
             <Card variant="elevation">
               <CardMedia
                 component="img"
@@ -40,14 +45,15 @@ export default function Proyectos() {
                   component="div"
                   color={theme.palette.text.primary}
                 >
-                  Radio100
+                  Radio100.cl
                 </Typography>
                 <Typography
                   variant="subtitle1"
-                  fontSize={18}
+                  fontSize={19}
                   color={theme.palette.text.primary}
                   textAlign="justify"
                 >
+                  <span style={{ fontWeight: "bold" }}>Descripción:</span>{" "}
                   Desarrollo de una página web para Radio100, la cual tenía como
                   finalidad poder escuchar la radio en tiempo real, así como la
                   publicación de afiches publicitarios. Visitar la página en{" "}
@@ -64,19 +70,27 @@ export default function Proyectos() {
                     radio100.cl
                   </Link>
                 </Typography>
+                <Typography
+                  variant="subtitle1"
+                  fontSize={19}
+                  color={theme.palette.text.primary}
+                  textAlign="justify"
+                >
+                  <span style={{ fontWeight: "bold" }}>Puesto:</span>{" "}
+                  Desarrollador Web (FullStack)
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  fontSize={19}
+                  color={theme.palette.text.primary}
+                  textAlign="justify"
+                >
+                  <span style={{ fontWeight: "bold" }}>Tecnologías:</span>{" "}
+                  Node.js - React - MongoDB - Bootstrap
+                </Typography>
               </CardContent>
               <CardActions sx={{ padding: 2 }}>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} xl={5}>
-                    <Button
-                      variant="contained"
-                      color="warning"
-                      sx={{ width: "100%", color: "#fff" }}
-                      size="large"
-                    >
-                      Más detalles
-                    </Button>
-                  </Grid>
                   <Grid item xs={12} xl={5}>
                     <Button
                       variant="contained"

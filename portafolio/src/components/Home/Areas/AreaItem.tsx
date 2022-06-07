@@ -23,7 +23,7 @@ export default function AreaItem({ a }: Props) {
         }}
       >
         {a.frameworks.map((f: Framework) => (
-          <FrameworkItem f={f}/>
+          <FrameworkItem f={f} key={f.title}/>
         ))}
       </Grid>
     </Box>

@@ -13,7 +13,7 @@ export default function Areas() {
           Áreas de desempeño
         </Typography>
         {areas.map((a: Area) => (
-          <AreaItem a={a}/>
+          <AreaItem a={a} key={a.section}/>
         ))}
       </Container>
     </Box>

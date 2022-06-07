@@ -59,7 +59,7 @@ export default function Navbar(props: Props) {
             variant="h4"
             noWrap
           >
-            Portafolio
+            Mi Portafolio
           </Typography>
           <FormGroup>
             <FormControlLabel

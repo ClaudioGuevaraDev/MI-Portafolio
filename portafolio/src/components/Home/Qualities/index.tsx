@@ -16,7 +16,7 @@ export default function Qualities() {
         </Typography>
         <Grid container spacing={3}>
           {qualities.map((q: quality) => (
-            <QualityItem q={q}/>
+            <QualityItem q={q} key={q.title} />
           ))}
         </Grid>
       </Container>

@@ -6,6 +6,7 @@ import MySQL from "../../../assets/areas/mysql-icon.svg";
 import PostgreSQL from "../../../assets/areas/postgresql.svg";
 import MongoDB from "../../../assets/areas/mongodb.svg"
 import Electron from "../../../assets/areas/electron.svg";
+import Tauri from "../../../assets/areas/tauri.svg"
 import Bootstrap from "../../../assets/areas/bootstrap.svg";
 import MaterialUI from "../../../assets/areas/material-ui.svg";
 import Pandas from "../../../assets/areas/pandas.png"
@@ -74,6 +75,11 @@ export const areas: Area[] = [
         image: Electron,
         url: "https://www.electronjs.org/",
       },
+      {
+        title: "Tauri",
+        image: Tauri,
+        url: "https://tauri.studio/"
+      }
     ],
   },
   {

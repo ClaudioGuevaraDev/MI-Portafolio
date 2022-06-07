@@ -18,7 +18,7 @@ export default function Languages() {
         </Typography>
         <Grid container spacing={5}>
           {languages.map((l: language) => (
-            <LanguageItem l={l} />
+            <LanguageItem l={l} key={l.title} />
           ))}
         </Grid>
       </Container>
