@@ -6,18 +6,9 @@ export default function Languages() {
   return (
     <Box sx={{ textAlign: "center" }}>
       <Container maxWidth="xl" sx={{ padding: 10 }}>
-        <Typography variant="h3" fontWeight="bold">
+        <Typography variant="h3" fontWeight="bold" marginTop={2}
+          marginBottom={10}>
           Conocimientos
-        </Typography>
-        <Typography
-          variant="subtitle1"
-          fontSize={20}
-          marginTop={2}
-          marginBottom={10}
-          fontStyle="italic"
-        >
-          Mis conocimientos base y los lenguajes de programación con los que
-          mejor me desempeño para el desarrollo de software
         </Typography>
         <Grid container spacing={5}>
           {languages.map((l: language) => (

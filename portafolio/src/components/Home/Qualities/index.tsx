@@ -4,10 +4,7 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-import Happy from "../../../assets/qualities/happy.svg";
-import Sociable from "../../../assets/qualities/remote-team.svg"
-import Worker from "../../../assets/qualities/javascript-coding-language.svg"
-import Improve from "../../../assets/qualities/success.svg"
+import { qualities, quality } from "./qualities";
 
 export default function Qualities() {
   const theme = useTheme();
@@ -15,70 +12,33 @@ export default function Qualities() {
   return (
     <Box sx={{ textAlign: "center" }}>
       <Container maxWidth="xl" sx={{ padding: 10 }}>
-        <Typography
-          variant="h3"
-          fontWeight="bold"
-          sx={{ color: theme.palette.primary.main, marginBottom: 10 }}
-        >
+        <Typography variant="h3" fontWeight="bold" sx={{ marginBottom: 10 }}>
           Mis Cualidades
         </Typography>
-        <Grid container spacing={5}>
-          <Grid item xl={3}>
-            <Box>
-              <img src={Happy} alt="happy-illustration" />
-              <Typography variant="h5" fontWeight="bold">
-                Alegre
-              </Typography>
-              <Typography variant="subtitle1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xl={3}>
-            <Box>
-              <img src={Sociable} alt="happy-illustration" />
-              <Typography variant="h5" fontWeight="bold">
-                Alegre
-              </Typography>
-              <Typography variant="subtitle1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xl={3}>
-            <Box>
-              <img src={Worker} alt="happy-illustration" />
-              <Typography variant="h5" fontWeight="bold">
-                Alegre
-              </Typography>
-              <Typography variant="subtitle1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid item xl={3}>
-            <Box>
-              <img src={Improve} alt="happy-illustration" />
-              <Typography variant="h5" fontWeight="bold">
-                Alegre
-              </Typography>
-              <Typography variant="subtitle1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </Typography>
-            </Box>
-          </Grid>
+        <Grid container spacing={3}>
+          {qualities.map((q: quality) => (
+            <Grid item xl={3} xs={12} key={q.title}>
+              <Box
+                sx={{
+                  backgroundColor:
+                    theme.palette.mode === "light"
+                      ? "transparent"
+                      : theme.palette.divider,
+                  height: "100%",
+                  padding: 2,
+                  borderRadius: "3px"
+                }}
+              >
+                <img src={q.image} alt={q.title} />
+                <Typography variant="h5" fontWeight="bold" sx={{ marginY: 2 }}>
+                  {q.title}
+                </Typography>
+                <Typography variant="body1" fontSize={18}>
+                  {q.description}
+                </Typography>
+              </Box>
+            </Grid>
+          ))}
         </Grid>
       </Container>
     </Box>
