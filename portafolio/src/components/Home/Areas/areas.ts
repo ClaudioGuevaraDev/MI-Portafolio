@@ -2,6 +2,7 @@ import Node from "../../../assets/areas/node.svg";
 import Express from "../../../assets/areas/express.png"
 import FastAPI from "../../../assets/areas/fastapi.png"
 import React from "../../../assets/areas/react.svg";
+import Vite from "../../../assets/areas/vitejs.svg"
 import MySQL from "../../../assets/areas/mysql-icon.svg";
 import PostgreSQL from "../../../assets/areas/postgresql.svg";
 import MongoDB from "../../../assets/areas/mongodb.svg"
@@ -60,6 +61,11 @@ export const areas: Area[] = [
         image: React,
         url: "https://es.reactjs.org/",
       },
+      {
+        title: "Vite",
+        image: Vite,
+        url: "https://vitejs.dev/"
+      }
       // {
       //   title: "Vue",
       //   image: Vue,

@@ -51,16 +51,22 @@ export default function Navbar(props: Props) {
   return (
     <ElevationScroll {...props}>
       <AppBar
-        sx={{ p: 2, backgroundColor: theme.palette.background.default }}
+        sx={{
+          p: 2,
+          backgroundColor: theme.palette.background.default,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "end",
+        }}
       >
         <Toolbar variant="dense">
-          <Typography
+          {/* <Typography
             sx={{ flexGrow: 1, fontWeight: "bold", fontStyle: "italic", color: theme.palette.primary.main }}
             variant="h4"
             noWrap
           >
             Mi Portafolio
-          </Typography>
+          </Typography> */}
           <FormGroup>
             <FormControlLabel
               control={<MaterialUISwitch onChange={handleChangeMode} />}
