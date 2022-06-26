@@ -1,25 +1,26 @@
 import Node from "../../../assets/areas/node.svg";
-import Express from "../../../assets/areas/express.png"
-import FastAPI from "../../../assets/areas/fastapi.png"
+import Express from "../../../assets/areas/express.png";
+import FastAPI from "../../../assets/areas/fastapi.png";
 import React from "../../../assets/areas/react.svg";
-import Vite from "../../../assets/areas/vitejs.svg"
+import Vite from "../../../assets/areas/vitejs.svg";
 import MySQL from "../../../assets/areas/mysql-icon.svg";
 import PostgreSQL from "../../../assets/areas/postgresql.svg";
-import MongoDB from "../../../assets/areas/mongodb.svg"
+import MongoDB from "../../../assets/areas/mongodb.svg";
 import Electron from "../../../assets/areas/electron.svg";
-import Tauri from "../../../assets/areas/tauri.svg"
+import Tauri from "../../../assets/areas/tauri.svg";
 import Bootstrap from "../../../assets/areas/bootstrap.svg";
 import MaterialUI from "../../../assets/areas/material-ui.svg";
-import Pandas from "../../../assets/areas/pandas.png"
-import Numpy from "../../../assets/areas/numpy.svg"
-import Matplotlib from "../../../assets/areas/matplotlib-icon.svg"
-import ScikitLearn from "../../../assets/areas/scikit-learn.png"
+import Pandas from "../../../assets/areas/pandas.png";
+import Numpy from "../../../assets/areas/numpy.svg";
+import Matplotlib from "../../../assets/areas/matplotlib-icon.svg";
+import ScikitLearn from "../../../assets/areas/scikit-learn.png";
 import Playwright from "../../../assets/areas/playwright.svg";
 import Linux from "../../../assets/areas/linux-tux.svg";
 import Terminal from "../../../assets/areas/terminal.svg";
+import Git from "../../../assets/areas/git-icon.svg";
 import Docker from "../../../assets/areas/docker-icon.svg";
-import Anaconda from "../../../assets/areas/anaconda.png"
-import Nginx from "../../../assets/areas/nginx.svg"
+import Anaconda from "../../../assets/areas/anaconda.png";
+import Nginx from "../../../assets/areas/nginx.svg";
 
 export interface Framework {
   title: string;
@@ -49,8 +50,8 @@ export const areas: Area[] = [
       {
         title: "FastAPI",
         image: FastAPI,
-        url: "https://fastapi.tiangolo.com/"
-      }
+        url: "https://fastapi.tiangolo.com/",
+      },
     ],
   },
   {
@@ -64,8 +65,8 @@ export const areas: Area[] = [
       {
         title: "Vite",
         image: Vite,
-        url: "https://vitejs.dev/"
-      }
+        url: "https://vitejs.dev/",
+      },
       // {
       //   title: "Vue",
       //   image: Vue,
@@ -84,8 +85,8 @@ export const areas: Area[] = [
       {
         title: "Tauri",
         image: Tauri,
-        url: "https://tauri.studio/"
-      }
+        url: "https://tauri.studio/",
+      },
     ],
   },
   {
@@ -114,7 +115,7 @@ export const areas: Area[] = [
       {
         title: "MongoDB",
         image: MongoDB,
-        url: "https://www.mongodb.com/es"
+        url: "https://www.mongodb.com/es",
       },
     ],
   },
@@ -139,24 +140,24 @@ export const areas: Area[] = [
       {
         title: "Pandas",
         image: Pandas,
-        url: "https://pandas.pydata.org/"
+        url: "https://pandas.pydata.org/",
       },
       {
         title: "Numpy",
         image: Numpy,
-        url: "https://numpy.org/"
+        url: "https://numpy.org/",
       },
       {
         title: "Matplotlib",
         image: Matplotlib,
-        url: "https://matplotlib.org/"
+        url: "https://matplotlib.org/",
       },
       {
         title: "Scikit Learn",
         image: ScikitLearn,
-        url: "https://scikit-learn.org/stable/"
-      }
-    ]
+        url: "https://scikit-learn.org/stable/",
+      },
+    ],
   },
   {
     section: "Web Scraping",
@@ -182,6 +183,11 @@ export const areas: Area[] = [
         url: "https://es.wikipedia.org/wiki/GNU/Linux",
       },
       {
+        title: "Git",
+        image: Git,
+        url: "https://git-scm.com/",
+      },
+      {
         title: "Docker",
         image: Docker,
         url: "https://www.docker.com/",
@@ -189,13 +195,13 @@ export const areas: Area[] = [
       {
         title: "Anaconda",
         image: Anaconda,
-        url: "https://www.anaconda.com/"
+        url: "https://www.anaconda.com/",
       },
       {
         title: "Nginx",
         image: Nginx,
-        url: "https://www.nginx.com/"
-      }
+        url: "https://www.nginx.com/",
+      },
     ],
   },
 ];
