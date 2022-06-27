@@ -1,9 +1,17 @@
-import { Box, Container, Grid, Typography, Divider } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  Divider,
+  Tooltip,
+} from "@mui/material";
 import Claudio from "../../../assets/claudio.jpeg";
 import { useTheme } from "@mui/material/styles";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
+import Espanol from "../../../assets/español.png";
 
 export default function Portada() {
   const theme = useTheme();
@@ -73,7 +81,6 @@ export default function Portada() {
                     color: theme.palette.text.primary,
                     display: "flex",
                     alignItems: "center",
-                    marginX: 1,
                     fontSize: 35,
                   }}
                 />
@@ -84,12 +91,16 @@ export default function Portada() {
                     color: theme.palette.text.primary,
                     display: "flex",
                     alignItems: "center",
-                    marginX: 1,
+                    marginLeft: 1,
                     fontSize: 35,
                   }}
                 />
               </a>
             </Box>
+            <Divider orientation="vertical" flexItem sx={{ marginX: 1 }} />
+            <Tooltip title="Idioma español">
+              <img src={Espanol} width={35} height={35} alt="Idioma español" />
+            </Tooltip>
           </Box>
         </Grid>
         <Grid
