@@ -14,11 +14,11 @@ export default function Home() {
 
         {/* <Qualities /> */}
 
-        <Languages />
+        {/* <Languages />
 
         <Areas />
 
-        <Proyectos />
+        <Proyectos /> */}
       </>
     </Layout>
   );
