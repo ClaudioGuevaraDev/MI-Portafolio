@@ -1,4 +1,4 @@
-import { Grid, Tooltip, Link } from "@mui/material";
+import { Grid, Tooltip, Link, Box } from "@mui/material";
 
 import { language } from "./languages";
 
@@ -8,7 +8,7 @@ interface Props {
 
 export default function LanguageItem({ l }: Props) {
   return (
-    <Grid item xl={2} xs={12} key={l.title}>
+    <Grid item xl={2} lg={2} md={2} sm={4} xs={6} key={l.title}>
       <Tooltip title={l.title}>
         <Link
           style={{
@@ -20,7 +20,15 @@ export default function LanguageItem({ l }: Props) {
           href={l.url}
           target="_blank"
         >
-          <img src={l.image} width={200} height={200} alt={l.title} />
+          <Box
+            component="img"
+            sx={{
+              width: { xl: 200, lg: 180, md: 140, sm: 140, xs: 150 },
+              height: { xl: 200, lg: 180, md: 140, sm: 140, xs: 150 },
+            }}
+            alt={l.title}
+            src={l.image}
+          />
         </Link>
       </Tooltip>
     </Grid>

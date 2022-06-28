@@ -14,9 +14,9 @@ export default function Home() {
 
         {/* <Qualities /> */}
 
-        {/* <Languages />
+        <Languages />
 
-        <Areas />
+        {/* <Areas />
 
         <Proyectos /> */}
       </>
