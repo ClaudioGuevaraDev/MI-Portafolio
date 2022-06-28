@@ -19,32 +19,48 @@ export default function Proyectos() {
   const theme = useTheme();
 
   return (
-    <Box>
-      <Container maxWidth="xl" sx={{ padding: 10 }}>
+    <Box textAlign="center">
+      <Container
+        maxWidth="xl"
+        sx={{
+          padding: 3,
+          marginTop: 2,
+        }}
+      >
         <Typography
           variant="h3"
-          fontWeight="bold"
-          sx={{ marginBottom: 10 }}
-          textAlign="center"
+          fontWeight="500"
+          marginTop={2}
+          marginBottom={5}
+          fontSize={{ xl: 60, lg: 55, md: 50, sm: 43, xs: 32 }}
         >
           Proyectos
         </Typography>
         <Grid container spacing={3}>
           {proyectos.map((p: IProyecto) => (
-            <Grid item xl={4} xs={12}>
-              <Card variant="elevation" sx={{ height: "100%" }}>
-                <CardMedia
-                  component="img"
-                  height="200"
-                  src={p.image}
-                  alt="radio100.cl"
-                />
-                <CardContent sx={{ padding: 2 }}>
+            <Grid item xl={4} lg={4} md={6} sm={6} xs={12}>
+              <Card
+                variant="elevation"
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                }}
+              >
+                <CardContent sx={{ height: "100%" }}>
+                  <CardMedia
+                    component="img"
+                    height="200"
+                    src={p.image}
+                    alt={p.title}
+                  />
                   <Typography
                     gutterBottom
                     variant="h4"
                     component="div"
                     color={theme.palette.text.primary}
+                    sx={{ marginTop: 2 }}
                   >
                     {p.title}
                   </Typography>
@@ -97,7 +113,7 @@ export default function Proyectos() {
                 </CardContent>
                 <CardActions sx={{ padding: 2 }}>
                   <Grid container spacing={2}>
-                    <Grid item xs={12} xl={5}>
+                    <Grid item xs={12} md={6} lg={6} xl={5}>
                       {p.repositorio ? (
                         <Link
                           href={p.repositorio}
