@@ -1,4 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-loading"
+import LoadingScreen from "./components/LoadingScreen";
 
 // Pages
 import Home from "./pages/Home";
@@ -6,9 +8,9 @@ import Home from "./pages/Home";
 export default function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="*" element={<Home />} />
+      <Routes loadingScreen={LoadingScreen}>
+        <Route path="/" element={<Home />} loading/>
+        <Route path="*" element={<Home />} loading/>
       </Routes>
     </BrowserRouter>
   );

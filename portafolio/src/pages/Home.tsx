@@ -6,8 +6,11 @@ import Areas from "../components/Home/Areas";
 import Proyectos from "../components/Home/Proyectos";
 import Portada from "../components/Home/Portada";
 import { Box } from "@mui/material";
+import useLoadingComponent from "../hooks/useLoadingComponent";
 
 export default function Home() {
+  useLoadingComponent();
+
   return (
     <Layout>
       <>
