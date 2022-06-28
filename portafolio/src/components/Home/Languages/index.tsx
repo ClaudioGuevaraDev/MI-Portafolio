@@ -16,10 +16,10 @@ export default function Languages() {
       >
         <Typography
           variant="h3"
-          fontWeight="600"
+          fontWeight="500"
           marginTop={2}
           marginBottom={5}
-          fontSize={{ xl: 65, lg: 55, md: 50, sm: 40, xs: 35 }}
+          fontSize={{ xl: 60, lg: 55, md: 50, sm: 43, xs: 32 }}
         >
           Conocimientos
         </Typography>

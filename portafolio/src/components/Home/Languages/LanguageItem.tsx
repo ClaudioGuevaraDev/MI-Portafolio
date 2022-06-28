@@ -23,8 +23,8 @@ export default function LanguageItem({ l }: Props) {
           <Box
             component="img"
             sx={{
-              width: { xl: 200, lg: 180, md: 140, sm: 140, xs: 150 },
-              height: { xl: 200, lg: 180, md: 140, sm: 140, xs: 150 },
+              width: { xl: 200, lg: 180, md: 150, sm: 140, xs: 120 },
+              height: { xl: 200, lg: 180, md: 150, sm: 140, xs: 120 },
             }}
             alt={l.title}
             src={l.image}

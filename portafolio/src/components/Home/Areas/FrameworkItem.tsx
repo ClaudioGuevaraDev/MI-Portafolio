@@ -11,7 +11,7 @@ export default function FrameworkItem({ f }: Props) {
   const theme = useTheme();
 
   return (
-    <Grid item xl={2.3} key={f.title}>
+    <Grid item xl={2.3} lg={2.7} md={3.7} sm={5.5} xs={9.5} key={f.title}>
       <Link
         sx={{
           cursor: "pointer",

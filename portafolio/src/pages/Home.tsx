@@ -16,9 +16,9 @@ export default function Home() {
 
         <Languages />
 
-        {/* <Areas />
+        <Areas />
 
-        <Proyectos /> */}
+        {/* <Proyectos /> */}
       </>
     </Layout>
   );
