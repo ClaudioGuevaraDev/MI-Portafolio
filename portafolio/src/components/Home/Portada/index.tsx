@@ -20,7 +20,7 @@ export default function Portada() {
     <Container
       maxWidth="xl"
       sx={{
-        padding: 2,
+        padding: 20,
       }}
     >
       <Grid container spacing={2}>

@@ -19,18 +19,19 @@ export default function Proyectos() {
   const theme = useTheme();
 
   return (
-    <Box textAlign="center">
+    <Box
+      textAlign="center"
+      sx={{ backgroundColor: theme.palette.action.selected }}
+    >
       <Container
         maxWidth="xl"
         sx={{
-          padding: 3,
-          marginTop: 2,
+          padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 3 },
         }}
       >
         <Typography
           variant="h3"
           fontWeight="500"
-          marginTop={2}
           marginBottom={5}
           fontSize={{ xl: 60, lg: 55, md: 50, sm: 43, xs: 32 }}
         >
