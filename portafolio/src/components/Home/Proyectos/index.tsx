@@ -21,12 +21,15 @@ export default function Proyectos() {
   return (
     <Box
       textAlign="center"
-      sx={{ backgroundColor: theme.palette.action.selected }}
+      sx={{
+        backgroundColor:
+          theme.palette.mode === "dark" ? theme.palette.divider : "#f2f2f2",
+      }}
     >
       <Container
         maxWidth="xl"
         sx={{
-          padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 3 },
+          padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 4 },
         }}
       >
         <Typography

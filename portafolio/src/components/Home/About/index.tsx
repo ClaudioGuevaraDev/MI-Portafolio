@@ -1,17 +1,25 @@
 import { Box, Container, Typography } from "@mui/material";
-import Fondo from "../../../assets/fondo_about.jpg";
+
+import { useTheme } from "@mui/material/styles";
 
 export default function About() {
+  const theme = useTheme();
+
   return (
-    <Box sx={{ textAlign: "center" }}>
+    <Box
+      sx={{
+        textAlign: "center",
+        backgroundColor:
+          theme.palette.mode === "dark" ? theme.palette.divider : "#f2f2f2",
+      }}
+    >
       <Container
         maxWidth="xl"
         sx={{
-          padding: 2,
-          marginTop: 2,
+          padding: { xl: 15, lg: 15, md: 10, sm: 10, xs: 4 },
         }}
       >
-        <Typography variant="h5">
+        <Typography variant="h4">
           Hola, mi nombre es Claudio Guevara. Soy desarrollador de software
           egresado de la Univerisdad de Talca, Chile. Hice esta página con el
           fin de mostrar mis capacidades en el mundo de la programación.

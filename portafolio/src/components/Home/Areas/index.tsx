@@ -11,7 +11,7 @@ export default function Areas() {
       <Container
         maxWidth="xl"
         sx={{
-          padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 3 },
+          padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 4 },
         }}
       >
         <Typography

@@ -5,15 +5,25 @@ import { languages, language } from "./languages";
 import LanguageItem from "./LanguageItem";
 import { useTheme } from "@mui/material/styles";
 
+import Fondo from "../../../assets/fondo_about.jpg";
+
 export default function Languages() {
   const theme = useTheme();
 
   return (
-    <Box sx={{ textAlign: "center", backgroundColor: theme.palette.action.selected }}>
+    <Box
+      sx={{
+        textAlign: "center",
+        backgroundImage: `url(${Fondo})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        color: "white"
+      }}
+    >
       <Container
         maxWidth="xl"
         sx={{
-          padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 3 },
+          padding: { xl: 20, lg: 15, md: 10, sm: 10, xs: 4 },
         }}
       >
         <Typography
