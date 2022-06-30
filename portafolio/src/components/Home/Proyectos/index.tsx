@@ -79,25 +79,27 @@ export default function Proyectos() {
                       <span style={{ fontWeight: "bold" }}>Descripción:</span>{" "}
                       {p.description}
                     </Typography>
-                    <Typography
-                      variant="subtitle1"
-                      fontSize={19}
-                      color={theme.palette.text.primary}
-                      textAlign="justify"
-                    >
-                      <span style={{ fontWeight: "bold" }}>Visitar:</span>{" "}
-                      <Link
-                        href={p.link}
-                        target="_blank"
-                        style={{
-                          textDecoration: "none",
-                          fontSize: 21,
-                        }}
+                    {p.link && (
+                      <Typography
+                        variant="subtitle1"
+                        fontSize={19}
+                        color={theme.palette.text.primary}
+                        textAlign="justify"
                       >
-                        {" "}
-                        {p.link}
-                      </Link>
-                    </Typography>
+                        <span style={{ fontWeight: "bold" }}>Visitar:</span>{" "}
+                        <Link
+                          href={p.link}
+                          target="_blank"
+                          style={{
+                            textDecoration: "none",
+                            fontSize: 21,
+                          }}
+                        >
+                          {" "}
+                          {p.link}
+                        </Link>
+                      </Typography>
+                    )}
                     <Typography
                       variant="subtitle1"
                       fontSize={19}
