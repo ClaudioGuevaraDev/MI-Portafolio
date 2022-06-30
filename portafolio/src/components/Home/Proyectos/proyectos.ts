@@ -39,5 +39,6 @@ export const proyectos: IProyecto[] = [
     image: Claudio,
     puesto: "Desarrollador Web (Full Stack)",
     tecnologias: "React - Material UI",
+    repositorio: "https://github.com/ClaudioGuevaraDev/Portafolio",
   },
 ];
