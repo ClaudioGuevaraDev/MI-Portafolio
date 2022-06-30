@@ -37,7 +37,6 @@ export const proyectos: IProyecto[] = [
     description:
       "Página web que desarrolle como portafolio propio para mostrar los lenguages de programación con los que me desempeño y los trabajos que he realizado.",
     image: Claudio,
-    link: "https://claudioguevaradev.github.io/Portafolio/",
     puesto: "Desarrollador Web (Full Stack)",
     tecnologias: "React - Material UI",
   },
