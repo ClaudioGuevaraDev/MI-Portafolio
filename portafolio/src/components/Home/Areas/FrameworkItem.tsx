@@ -11,7 +11,7 @@ export default function FrameworkItem({ f }: Props) {
   const theme = useTheme();
 
   return (
-    <Grid item xl={2.3} lg={3} md={4} sm={6.5} xs={11.2} key={f.title}>
+    <Grid item xl={2.5} lg={3.2} md={4.3} sm={7} xs={11.2} key={f.title}>
       <Link
         sx={{
           cursor: "pointer",
@@ -38,7 +38,7 @@ export default function FrameworkItem({ f }: Props) {
                 : theme.palette.divider,
           }}
         >
-          <img src={f.image} width={60} height={60} alt={f.title} />
+          <img src={f.image} width={55} height={55} alt={f.title} />
           <Typography
             sx={{ marginLeft: 2 }}
             variant="subtitle1"
