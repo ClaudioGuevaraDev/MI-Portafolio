@@ -1,5 +1,6 @@
 import Radio100 from "../../../assets/proyectos/radio100.jpeg";
-import Peptipedia from "../../../assets/proyectos/peptipedia.jpg"
+import Peptipedia from "../../../assets/proyectos/peptipedia.jpg";
+import Claudio from "../../../assets/claudio.jpeg";
 
 export interface IProyecto {
   title: string;
@@ -25,10 +26,19 @@ export const proyectos: IProyecto[] = [
   {
     title: "Peptipedia",
     description:
-      "Desarrollo de una página web que consistía en un conjunto de herramientas para el apoyo de la investigación de la bioinformática y la ingeniería de proteínas. ",
+      "Desarrollo de una página web que consistía en un conjunto de herramientas para el apoyo de la investigación de la bioinformática y la ingeniería de proteínas.",
     image: Peptipedia,
     link: "https://peptipedia.cl/",
     puesto: "Desarrollador Web (Frontend)",
     tecnologias: "React - Vite - Material UI",
+  },
+  {
+    title: "Mi Portafolio",
+    description:
+      "Página web que desarrolle como portafolio propio para mostrar los lenguages de programación con los que me desempeño y los trabajos que he realizado.",
+    image: Claudio,
+    link: "https://claudioguevaradev.github.io/Portafolio/",
+    puesto: "Desarrollador Web (Full Stack)",
+    tecnologias: "React - Material UI",
   },
 ];
