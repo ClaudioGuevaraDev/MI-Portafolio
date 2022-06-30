@@ -60,13 +60,6 @@ export default function Navbar(props: Props) {
         }}
       >
         <Toolbar variant="dense">
-          {/* <Typography
-            sx={{ flexGrow: 1, fontWeight: "bold", fontStyle: "italic", color: theme.palette.primary.main }}
-            variant="h4"
-            noWrap
-          >
-            Mi Portafolio
-          </Typography> */}
           <FormGroup>
             <FormControlLabel
               control={<MaterialUISwitch onChange={handleChangeMode} />}

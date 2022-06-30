@@ -14,6 +14,7 @@ import Pandas from "../../../assets/areas/pandas.png";
 import Numpy from "../../../assets/areas/numpy.svg";
 import Matplotlib from "../../../assets/areas/matplotlib-icon.svg";
 import ScikitLearn from "../../../assets/areas/scikit-learn.png";
+import Prisma from "../../../assets/areas/prisma.svg"
 import Playwright from "../../../assets/areas/playwright.svg";
 import Linux from "../../../assets/areas/linux-tux.svg";
 import Terminal from "../../../assets/areas/terminal.svg";
@@ -160,13 +161,18 @@ export const areas: Area[] = [
     ],
   },
   {
-    section: "Web Scraping",
+    section: "Más librerías",
     frameworks: [
       {
         title: "Playwright",
         image: Playwright,
         url: "https://playwright.dev/",
       },
+      {
+        title: "Prisma ORM",
+        image: Prisma,
+        url: "https://www.prisma.io/"
+      }
     ],
   },
   {

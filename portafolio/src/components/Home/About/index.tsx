@@ -21,7 +21,18 @@ export default function About() {
             padding: { xl: 15, lg: 15, md: 10, sm: 10, xs: 4 },
           }}
         >
-          <Typography variant="h4">
+          <Typography
+            variant="h3"
+            fontWeight="500"
+            marginBottom={5}
+            fontSize={{ xl: 60, lg: 55, md: 50, sm: 43, xs: 32 }}
+          >
+            Sobre Mí
+          </Typography>
+          <Typography
+            variant="h4"
+            fontSize={{ xs: 25, sm: 35, md: 35, lg: 35, xl: 35 }}
+          >
             Hola, mi nombre es Claudio Guevara. Soy desarrollador de software
             egresado de la Universidad de Talca, Chile. Hice esta página con el
             fin de mostrar mis capacidades en el mundo de la programación.

@@ -22,7 +22,7 @@ export default function Portada() {
     <Container
       maxWidth="xl"
       sx={{
-        padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 4 },
+        padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 3 },
       }}
     >
       <Grid container spacing={2}>
@@ -61,7 +61,7 @@ export default function Portada() {
               Desarrollador de Software
             </Typography>
           </TypeIt>
-          <Zoom delay={4600}>
+          <Zoom delay={4700}>
             <Box
               sx={{
                 display: "flex",
