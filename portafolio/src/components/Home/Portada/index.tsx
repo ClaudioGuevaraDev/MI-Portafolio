@@ -22,10 +22,10 @@ export default function Portada() {
     <Container
       maxWidth="xl"
       sx={{
-        padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 3 },
+        padding: { xl: 10, lg: 10, md: 10, sm: 10, xs: 4 },
       }}
     >
-      <Grid container spacing={2}>
+      <Grid container spacing={8}>
         <Grid
           item
           xl={6}
@@ -44,7 +44,7 @@ export default function Portada() {
           <TypeIt options={{ startDelay: 2500, speed: 90, cursor: false }}>
             <Typography
               variant="h1"
-              fontSize={{ xl: 90, lg: 80, md: 65, sm: 43, xs: 32 }}
+              fontSize={{ xl: 90, lg: 80, md: 50, sm: 30, xs: 32 }}
               fontWeight="bold"
               color={theme.palette.primary.main}
             >
@@ -54,14 +54,14 @@ export default function Portada() {
           <TypeIt options={{ cursor: false, speed: 65, startDelay: 4200 }}>
             <Typography
               variant="h4"
-              fontSize={{ xl: 38, lg: 38, md: 32, sm: 25, xs: 20 }}
-              marginTop={{ xs: 1 }}
+              fontSize={{ xl: 38, lg: 38, md: 32, sm: 23, xs: 20 }}
+              marginTop={{ xs: 1, sm: -2, md: -2, lg: -2, xl: -2 }}
               marginBottom={{ xs: 2, sm: 2, md: 3, lg: 3, xl: 3 }}
             >
               Desarrollador de Software
             </Typography>
           </TypeIt>
-          <Zoom delay={4700}>
+          <Zoom delay={4800}>
             <Box
               sx={{
                 display: "flex",
@@ -161,8 +161,8 @@ export default function Portada() {
             <Box
               component="img"
               sx={{
-                height: { xl: 470, lg: 450, md: 350, sm: 280, xs: 270 },
-                width: { xl: 470, lg: 450, md: 350, sm: 280, xs: 270 },
+                height: { xl: 470, lg: 430, md: 300, sm: 200, xs: 270 },
+                width: { xl: 470, lg: 430, md: 300, sm: 200, xs: 270 },
                 borderRadius: "50%",
               }}
               alt="Claudio Guevara"
