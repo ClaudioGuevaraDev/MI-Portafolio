@@ -1,0 +1,8 @@
+{
+  "short_name": "Portafolio de Claudio Guevara",
+  "name": "Un simple portafolio en el que me presento y muestro mis conocimientos y proyectos en los que participe.",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
