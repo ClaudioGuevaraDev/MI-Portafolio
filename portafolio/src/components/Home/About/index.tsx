@@ -33,7 +33,7 @@ export default function About() {
             variant="h4"
             fontSize={{ xs: 25, sm: 35, md: 35, lg: 35, xl: 35 }}
           >
-            Hola, mi nombre es Claudio Guevara. Soy desarrollador de software
+            Hola, mi nombre es Claudio Guevara Vásquez. Soy desarrollador de software
             egresado de la Universidad de Talca, Chile. Hice esta página con el
             fin de mostrar mis capacidades en el mundo de la programación.
             <br></br>
