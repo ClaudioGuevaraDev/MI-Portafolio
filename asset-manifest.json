@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.ce23e1d6.css",
-    "main.js": "/portafolio/static/js/main.0fe01021.js",
+    "main.js": "/portafolio/static/js/main.0c64539d.js",
     "static/js/787.ae0d8d37.chunk.js": "/portafolio/static/js/787.ae0d8d37.chunk.js",
     "static/media/matplotlib-icon.svg": "/portafolio/static/media/matplotlib-icon.ea6b4de08ac5e09b28cede33217ac559.svg",
     "static/media/claudio.jpeg": "/portafolio/static/media/claudio.125ef6f8567f9e42e0d2.jpeg",
@@ -57,11 +57,11 @@
     "static/media/material-ui.svg": "/portafolio/static/media/material-ui.741a52f5f54e0b6073e48671571738ea.svg",
     "index.html": "/portafolio/index.html",
     "main.ce23e1d6.css.map": "/portafolio/static/css/main.ce23e1d6.css.map",
-    "main.0fe01021.js.map": "/portafolio/static/js/main.0fe01021.js.map",
+    "main.0c64539d.js.map": "/portafolio/static/js/main.0c64539d.js.map",
     "787.ae0d8d37.chunk.js.map": "/portafolio/static/js/787.ae0d8d37.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce23e1d6.css",
-    "static/js/main.0fe01021.js"
+    "static/js/main.0c64539d.js"
   ]
 }
