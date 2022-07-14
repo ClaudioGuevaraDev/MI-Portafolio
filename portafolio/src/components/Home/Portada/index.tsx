@@ -41,7 +41,7 @@ export default function Portada() {
             textAlign: "center",
           }}
         >
-          <TypeIt options={{ startDelay: 2500, speed: 90, cursor: false }}>
+          <TypeIt options={{ speed: 100, cursor: false }}>
             <Typography
               variant="h1"
               fontSize={{ xl: 90, lg: 80, md: 50, sm: 30, xs: 32 }}
@@ -51,17 +51,17 @@ export default function Portada() {
               Claudio Guevara
             </Typography>
           </TypeIt>
-          <TypeIt options={{ cursor: false, speed: 65, startDelay: 4200 }}>
+          <Zoom delay={2000}>
             <Typography
               variant="h4"
               fontSize={{ xl: 38, lg: 38, md: 32, sm: 23, xs: 20 }}
-              marginTop={{ xs: 1, sm: -2, md: -2, lg: -2, xl: -2 }}
+              marginTop={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}
               marginBottom={{ xs: 2, sm: 2, md: 3, lg: 3, xl: 3 }}
             >
               Desarrollador de Software
             </Typography>
-          </TypeIt>
-          <Zoom delay={4800}>
+          </Zoom>
+          <Zoom delay={3000}>
             <Box
               sx={{
                 display: "flex",

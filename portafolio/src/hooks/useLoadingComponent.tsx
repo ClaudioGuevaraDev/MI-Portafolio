@@ -19,9 +19,10 @@ export default function useLoadingComponent() {
   });
 
   useEffect(() => {
-    setTimeout(() => {
-        loadingContext.done();
-    }, 1500)
+    loadingContext.done();
+    // setTimeout(() => {
+    //     loadingContext.done();
+    // }, 1500)
   }, []);
 
   return {};
