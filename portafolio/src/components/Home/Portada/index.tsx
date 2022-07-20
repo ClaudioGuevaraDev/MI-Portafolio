@@ -14,6 +14,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import Espanol from "../../../assets/español.png";
 import { Zoom } from "react-reveal";
 import TypeIt from "typeit-react";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 export default function Portada() {
   const theme = useTheme();
@@ -56,7 +57,7 @@ export default function Portada() {
               variant="h4"
               fontSize={{ xl: 38, lg: 38, md: 32, sm: 23, xs: 20 }}
               marginTop={{ xs: 1, sm: 1, md: 1, lg: 1, xl: 1 }}
-              marginBottom={{ xs: 2, sm: 2, md: 3, lg: 3, xl: 3 }}
+              marginBottom={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2 }}
             >
               Desarrollador de Software
             </Typography>
@@ -76,6 +77,7 @@ export default function Portada() {
                 justifyContent: "center",
                 width: "100%",
               }}
+              marginBottom={{ xs: 0, sm: 0, md: 2, lg: 2, xl: 2 }}
             >
               <Box
                 sx={{
@@ -96,6 +98,44 @@ export default function Portada() {
                 />
                 <Typography variant="subtitle1" fontSize={18}>
                   claudio.guevara.dev@gmail.com
+                </Typography>
+              </Box>
+            </Box>
+          </Zoom>
+          <Zoom delay={4000}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: {
+                  xs: "column",
+                  sm: "column",
+                  md: "row",
+                  lg: "row",
+                  xl: "row",
+                },
+                alignItems: "center",
+                justifyContent: "center",
+                width: "100%",
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  marginTop: { xs: 1, sm: 1, md: 0, lg: 0, xl: 0 },
+                }}
+              >
+                <PhoneIcon
+                  sx={{
+                    color: theme.palette.text.primary,
+                    display: "flex",
+                    alignItems: "center",
+                    marginX: 1,
+                    fontSize: 28,
+                  }}
+                />
+                <Typography variant="subtitle1" fontSize={18}>
+                  +56940939963
                 </Typography>
               </Box>
               <Divider orientation="vertical" flexItem sx={{ marginX: 1 }} />
